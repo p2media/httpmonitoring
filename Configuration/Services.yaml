@@ -1,0 +1,21 @@
+# Configuration/Services.yaml
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  P2media\Httpmonitoring\:
+    resource: '../Classes/*'
+
+  P2media\Httpmonitoring\Command\CheckStatusCommand:
+    tags:
+      - name: 'console.command'
+        command: 'httpmonitoring:checkstatus'
+        description: 'Sends an email containing all logs which returned error status'
+
+  P2media\Httpmonitoring\Command\DeleteOldLogsCommand:
+    tags:
+      - name: 'console.command'
+        command: 'httpmonitoring:deleteoldlogs'
+        description: 'Deletes logs older than a certain amount of time.'

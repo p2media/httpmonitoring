@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:httpmonitoring/Resources/Private/Language/locallang_csh_tx_httpmonitoring_domain_model_uri.xlf" date="2022-10-27T13:13:31Z" product-name="httpmonitoring">
+		<header/>
+		<body>
+			<trans-unit id="path.description" resname="path.description">
+				<source>path</source>
+			</trans-unit>
+			<trans-unit id="laststatuswaserror.description" resname="laststatuswaserror.description">
+				<source>laststatuswaserror</source>
+			</trans-unit>
+			<trans-unit id="log.description" resname="log.description">
+				<source>log</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

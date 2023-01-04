@@ -1,0 +1,54 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+This template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Backend:
+        Templates:
+          Site:
+            List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="Buttons">
+    <be:moduleLayout.button.linkButton
+        icon="actions-add"
+        title="{f:translate(id: 'LLL:EXT:backend/Resources/Private/Language/locallang_layout.xlf:newRecordGeneral')}"
+        link="{f:uri.action(controller: 'Site', action: 'new')}"
+    />
+</f:section>
+
+<f:section name="Content">
+    <h1>Listing for Site</h1>
+
+    <f:flashMessages />
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th><f:translate key="tx_httpmonitoring_domain_model_site.title" /></th>
+                <th class="tableCell--edit" data-sort-method='none'></th>
+            </tr>
+        </thead>
+        <tbody>
+            <f:for each="{sites}" as="site">
+                <tr>
+                    <td><f:link.action action="show" arguments="{site: site}">{site.title}</f:link.action></td>
+                    <td class="tableCell--edit">
+                        <f:link.action action="edit" arguments="{site: site}" class="btn btn-default">Edit</f:link.action>
+                        <f:link.action action="delete" arguments="{site: site}" class="btn btn-danger">Delete</f:link.action>
+                    </td>
+                </tr>
+            </f:for>
+        </tbody>
+    </table>
+</f:section>
+</html>

@@ -1,0 +1,72 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<nav aria-label="Pagination">
+    <ul class="pagination justify-content-center">
+
+        <f:if condition="{pagination.previousPageNumber} && {pagination.previousPageNumber} >= {pagination.firstPageNumber}">
+            <f:then>
+                <li class="page-item">
+                    <a class="page-link"
+                       href="{f:uri.action(action: 'show', arguments:{currentPageNumberLog: pagination.previousPageNumber}, addQueryString: 1)}"
+                       title="{f:translate(key:'pagination.previous')}"
+                       aria-label="{f:translate(key: 'widget.pagination.previous', extensionName: 'fluid')}"
+                    >
+                        <i aria-hidden="true"><</i>
+                    </a>
+                </li>
+            </f:then>
+            <f:else>
+                <li class="page-item disabled">
+                    <span class="page-link" aria-label="{f:translate(key: 'widget.pagination.previous', extensionName: 'fluid')} {f:translate(key: 'pagination.disabled.label', extensionName: 'threeme')}">
+                        <i aria-hidden="true"><</i>
+                    </span>
+                </li>
+            </f:else>
+        </f:if>
+
+        <f:for each="{pagination.allPageNumbers}" as="page">
+            <f:if condition="{page} == {paginator.currentPageNumber}">
+                <f:then>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link" aria-label="{f:translate(key: 'tx_httpmonitoring.pagination.current')}">
+                            {page}
+                        </span>
+                    </li>
+                </f:then>
+                <f:else>
+                    <li class="page-item">
+                        <a class="page-link"
+                           href="{f:uri.action(action: 'show', arguments:{currentPageNumberLog: page}, addQueryString:1)}"
+                           aria-label="{f:translate(key: 'widget.pagination.page', extensionName: 'fluid')}">
+                            {page}
+                        </a>
+                    </li>
+                </f:else>
+            </f:if>
+        </f:for>
+
+        <f:if condition="{pagination.nextPageNumber} && {pagination.nextPageNumber} <= {pagination.lastPageNumber}">
+            <f:then>
+                <li class="page-item">
+                    <a class="page-link"
+                       href="{f:uri.action(action: 'show', arguments:{currentPageNumberLog: pagination.nextPageNumber}, addQueryString: 1)}"
+                       title="{f:translate(key:'pagination.next')}"
+                       aria-label="{f:translate(key: 'widget.pagination.next', extensionName: 'fluid')}">
+                        <i aria-hidden="true">></i>
+                    </a>
+                </li>
+            </f:then>
+            <f:else>
+                <li class="page-item disabled">
+                    <span class="page-link" aria-label="{f:translate(key: 'widget.pagination.next', extensionName: 'fluid')} {f:translate(key: 'pagination.disabled.label', extensionName: 'threeme')}">
+                        <i aria-hidden="true">></i>
+                    </span>
+                </li>
+            </f:else>
+        </f:if>
+
+    </ul>
+</nav>
+
+</html>

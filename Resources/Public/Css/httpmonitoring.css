@@ -1,0 +1,8 @@
+.tx_httpmonitoring .tableCell--edit {
+    width: 0;
+    white-space: nowrap;
+}
+
+.tx_httpmonitoring .link--uri {
+    text-decoration: underline;
+}

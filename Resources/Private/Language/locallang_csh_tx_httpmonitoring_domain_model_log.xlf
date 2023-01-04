@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:httpmonitoring/Resources/Private/Language/locallang_csh_tx_httpmonitoring_domain_model_log.xlf" date="2022-08-12T11:53:21Z" product-name="httpmonitoring">
+		<header/>
+		<body>
+			<trans-unit id="statuscode.description" resname="statuscode.description">
+				<source>statuscode</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

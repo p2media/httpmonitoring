@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:httpmonitoring/Resources/Private/Language/locallang_csh_tx_httpmonitoring_domain_model_address.xlf" date="2022-10-21T11:40:54Z" product-name="httpmonitoring">
+		<header/>
+		<body>
+			<trans-unit id="email.description" resname="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

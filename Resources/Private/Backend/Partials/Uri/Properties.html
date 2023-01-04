@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="table table-striped table-hover" >
+    <thead>
+        <tr>
+            <th><f:translate key="crdate" /></th>
+            <th><f:translate key="tx_httpmonitoring_domain_model_log.statuscode" /></th>
+        </tr>
+    </thead>
+    <tbody>
+    <f:for as="currentLog" each="{paginator.paginatedItems}">
+        <f:variable name="paddedcrdate"><f:format.padding padLength="10" padString="0" padType="left">{currentLog.crdate}</f:format.padding></f:variable>
+        <tr>
+            <td data-sort="{paddedcrdate}"><f:format.date format="Y.m.d - H:i:s">{currentLog.crdate}</f:format.date></td>
+            <td>{currentLog.statuscode}</td>
+        </tr>
+    </f:for>
+    </tbody>
+</table>
+</html>

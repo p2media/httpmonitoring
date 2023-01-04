@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:httpmonitoring/Resources/Private/Language/locallang_db.xlf" date="2022-10-27T13:13:31Z" product-name="httpmonitoring">
+		<header/>
+		<body>
+			<trans-unit id="crdate" resname="crdate">
+				<source>Creation Date</source>
+			</trans-unit>
+
+			<trans-unit id="tx_httpmonitoring_domain_model_site" resname="tx_httpmonitoring_domain_model_site">
+				<source>Site</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.title" resname="tx_httpmonitoring_domain_model_site.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.uri" resname="tx_httpmonitoring_domain_model_site.uri">
+				<source>Uri</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.address" resname="tx_httpmonitoring_domain_model_site.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri" resname="tx_httpmonitoring_domain_model_uri">
+				<source>Uri</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.path" resname="tx_httpmonitoring_domain_model_uri.path">
+				<source>Path</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.laststatuswaserror" resname="tx_httpmonitoring_domain_model_uri.laststatuswaserror">
+				<source>Laststatuswaserror</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.log" resname="tx_httpmonitoring_domain_model_uri.log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address" resname="tx_httpmonitoring_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address.email" resname="tx_httpmonitoring_domain_model_address.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address.name" resname="tx_httpmonitoring_domain_model_address.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_log" resname="tx_httpmonitoring_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_log.statuscode" resname="tx_httpmonitoring_domain_model_log.statuscode">
+				<source>Statuscode</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

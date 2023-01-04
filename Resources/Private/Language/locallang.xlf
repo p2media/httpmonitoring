@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:httpmonitoring/Resources/Private/Language/locallang.xlf" date="2022-10-27T13:13:31Z" product-name="httpmonitoring">
+		<header/>
+		<body>
+			<trans-unit id="crdate" resname="crdate">
+				<source>Creation Date</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter" resname="tx_httpmonitoring.filter">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.all" resname="tx_httpmonitoring.filter.all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.uri" resname="tx_httpmonitoring.filter.uri">
+				<source>URI</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.status" resname="tx_httpmonitoring.filter.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.onlyerrors" resname="tx_httpmonitoring.filter.onlyerrors">
+				<source>Only errors</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.timestart" resname="tx_httpmonitoring.filter.timestart">
+				<source>Time start</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.filter.timeend" resname="tx_httpmonitoring.filter.timeend">
+				<source>Time end</source>
+			</trans-unit>
+
+			<trans-unit id="tx_httpmonitoring_domain_model_site" resname="tx_httpmonitoring_domain_model_site">
+				<source>Site</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.title" resname="tx_httpmonitoring_domain_model_site.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.uri" resname="tx_httpmonitoring_domain_model_site.uri">
+				<source>Uri</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_site.address" resname="tx_httpmonitoring_domain_model_site.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri" resname="tx_httpmonitoring_domain_model_uri">
+				<source>Uri</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.path" resname="tx_httpmonitoring_domain_model_uri.path">
+				<source>Path</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.laststatuswaserror" resname="tx_httpmonitoring_domain_model_uri.laststatuswaserror">
+				<source>Laststatuswaserror</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_uri.log" resname="tx_httpmonitoring_domain_model_uri.log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address" resname="tx_httpmonitoring_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address.email" resname="tx_httpmonitoring_domain_model_address.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_address.name" resname="tx_httpmonitoring_domain_model_address.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_log" resname="tx_httpmonitoring_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring_domain_model_log.statuscode" resname="tx_httpmonitoring_domain_model_log.statuscode">
+				<source>Statuscode</source>
+			</trans-unit>
+
+			<trans-unit id="tx_httpmonitoring.validator.uri.notvalid" resname="tx_httpmonitoring.validator.uri.notvalid">
+				<source>The given subject is not a valid URI. It should follow this format: example.com/path</source>
+			</trans-unit>
+
+			<trans-unit id="tx_httpmonitoring.pagination.current" resname="tx_httpmonitoring.pagination.current">
+				<source>Current</source>
+			</trans-unit>
+
+			<trans-unit id="tx_httpmonitoring.settings.maximum_log_age" resname="tx_httpmonitoring.settings.maximum_log_age">
+				<source>Maximum log age in seconds</source>
+			</trans-unit>
+			<trans-unit id="tx_httpmonitoring.settings.sender_address" resname="tx_httpmonitoring.settings.sender_address">
+				<source>Default sender address</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,64 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+This template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Backend:
+        Templates:
+          Site:
+            Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="Buttons">
+    <be:moduleLayout.button.linkButton
+        icon="actions-view-go-back"
+        title="{f:translate(id: 'LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.goBack')}"
+        link="{f:uri.action(controller: 'Site', action: 'list')}"
+    />
+    <be:moduleLayout.button.linkButton
+        icon="actions-refresh"
+        title="Refresh"
+        link="{f:uri.action(action: 'show', arguments: '{site: site}')}"
+    />
+</f:section>
+
+<f:section name="Content">
+    <h1>Single View for {site.title}</h1>
+
+    <f:flashMessages />
+    <div class="row">
+        <div class="col">
+            <f:render partial="Site/AddUri" arguments="{site: site}" />
+            <f:render partial="Site/PropertiesUri" arguments="{paginator: paginationUri.paginator, site: site}" />
+            <f:if condition="{paginationUri.paginator.numberOfPages} > 1">
+                <f:render partial="Site/PaginationUri" arguments="{pagination: paginationUri.pagination, paginator: paginationUri.paginator}" />
+            </f:if>
+        </div>
+        <div class="col">
+            <f:render partial="Site/AddAddress" arguments="{site: site}" />
+            <f:render partial="Site/PropertiesAddress" arguments="{paginator: paginationAddress.paginator, site: site}" />
+            <f:if condition="{paginationAddress.paginator.numberOfPages} > 1">
+                <f:render partial="Site/PaginationAddress" arguments="{pagination: paginationAddress.pagination, paginator: paginationAddress.paginator}" />
+            </f:if>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <f:render partial="Site/PropertiesLog" arguments="{paginator: paginationLog.paginator, site: site}" />
+            <f:if condition="{paginationLog.paginator.numberOfPages} > 1">
+                <f:render partial="Site/PaginationLog" arguments="{pagination: paginationLog.pagination, paginator: paginationLog.paginator}" />
+            </f:if>
+        </div>
+    </div>
+    <f:link.action action="list" class="btn btn-default">Back to list</f:link.action>
+</f:section>
+</html>

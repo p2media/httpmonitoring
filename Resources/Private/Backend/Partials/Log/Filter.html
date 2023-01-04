@@ -1,0 +1,37 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:form action="list" name="filter" object="{filter}" >
+    <div class="row row-cols-auto align-items-end g-3">
+        <f:comment>
+            <div class="col">
+                <label for="httpmonitoring-domain" class="form-label"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.uri" /></label>
+                <f:form.select class="form-select" id="httpmonitoring-domain" options="{secondandtopleveldomainarray}" property="domainname"
+                               optionValueField="domainname" optionLabelField="domainname"
+                               prependOptionLabel="*{f:translate(key: 'LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.all')}*" prependOptionValue="">
+                </f:form.select>
+            </div>
+        </f:comment>
+        <div class="col">
+            <label for="httpmonitoring-status"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.status" /></label>
+            <f:form.textfield class="form-control" id="httpmonitoring-status" property="status" type="number" />
+        </div>
+        <div class="col">
+            <label for="httpmonitoring-onlyErrors"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.onlyerrors" /></label>
+            <f:form.checkbox class="form-check-input" id="httpmonitoring-onlyErrors" property="onlyErrors" value="true" />
+        </div>
+        <div class="col">
+            <label for="httpmonitoring-timeStart"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.timestart" /></label>
+            <f:form.textfield class="form-control" id="httpmonitoring-timeStart" property="timeStart" type="datetime-local" />
+        </div>
+        <div class="col">
+            <label for="httpmonitoring-timeEnd"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter.timeend" /></label>
+            <f:form.textfield class="form-control" id="httpmonitoring-timeEnd" property="timeEnd" type="datetime-local" />
+        </div>
+    </div>
+    <div class="col">
+        <f:form.button type="submit" class="btn btn-light"><f:translate key="LLL:EXT:httpmonitoring/Resources/Private/Language/locallang.xlf:tx_httpmonitoring.filter" /></f:form.button>
+    </div>
+</f:form>
+
+</html>

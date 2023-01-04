@@ -1,0 +1,17 @@
+# Module configuration
+module.tx_httpmonitoring_tools_httpmonitoringmonitoring {
+    persistence {
+        storagePid = {$module.tx_httpmonitoring_monitoring.persistence.storagePid}
+    }
+
+    view {
+        templateRootPaths.0 = EXT:httpmonitoring/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_httpmonitoring_monitoring.view.templateRootPath}
+        partialRootPaths.0 = EXT:httpmonitoring/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_httpmonitoring_monitoring.view.partialRootPath}
+        layoutRootPaths.0 = EXT:httpmonitoring/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_httpmonitoring_monitoring.view.layoutRootPath}
+    }
+
+    # settings {}
+}
