@@ -1,7 +1,7 @@
 {
     "name": "p2media/httpmonitoring",
     "type": "typo3-cms-extension",
-    "description": "An extension for the TYP3 CMS which adds a backend module for monitoring the HTTP status code given out by sites.",
+    "description": "An extension for the TYPO3 CMS which adds a backend module for monitoring the HTTP status code given out by sites.",
     "authors": [
         {
             "name": "Marius Kachel",
