@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'httpmonitoring',
-    'description' => '',
+    'description' => 'An extension for the TYP3 CMS which adds a backend module for monitoring the HTTP status code given out by sites.',
     'category' => 'module',
     'author' => 'Marius Kachel',
     'author_email' => 'marius.kachel@p2media.de',
