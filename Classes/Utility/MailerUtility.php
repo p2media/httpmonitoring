@@ -13,7 +13,7 @@ class MailerUtility
 {
     /**
      * Takes an UpdatedStatusContainer and sends out emails detailing the URIs which have now started or stopped
-     * returning error coodes
+     * returning error codes
      */
     public static function sendErrorMail(UpdatedStatusContainer $updatedStatusContainer): void
     {
