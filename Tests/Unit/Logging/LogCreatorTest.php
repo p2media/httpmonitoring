@@ -119,6 +119,9 @@ class LogCreatorTest extends UnitTestCase
         $this->assertEquals($updatedStatusContainer, $result);
     }
 
+    /**
+     * Prepare dummy data
+     */
     private function prepareTest
     (
         Log $log,
