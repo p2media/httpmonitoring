@@ -10,15 +10,6 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * This file is part of the "httpmonitoring_example" Extension for TYPO3 CMS.
- *
- * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * (c) 2022 Marius Kachel <marius.kachel@p2media.de>, p2media
- */
-
-/**
  * URL
  */
 class Uri extends AbstractEntity
